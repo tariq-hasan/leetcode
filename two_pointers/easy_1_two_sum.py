@@ -6,3 +6,6 @@ class Solution:
             if complement in map_index:
                 return [i, map_index[complement]]
             map_index[nums[i]] = i
+
+# The time complexity is O(n).
+# The space complexity is O(n).
