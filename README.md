@@ -29,3 +29,11 @@ This repository contains solutions to various LeetCode problems for practicing c
 15. [Medium: 75. Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 16. [Medium: 151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/)
 17. [Medium: 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/)
+
+## Fast and Slow Pointers
+
+18. [Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
+19. [Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/description/)
+20. [Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
+21. [Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/description/)
+22. [Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
