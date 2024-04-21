@@ -87,3 +87,11 @@ This repository contains solutions to various LeetCode problems for practicing c
 3. [Medium: 378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
 4. [Hard: 4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 5. [Hard: 23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+
+## Subsets
+
+1. [Medium: 17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
+2. [Medium: 22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
+3. [Medium: 46. Permutations](https://leetcode.com/problems/permutations/description/)
+4. [Medium: 78. Subsets](https://leetcode.com/problems/subsets/description/)
+5. [Medium: 320. Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/description/)
