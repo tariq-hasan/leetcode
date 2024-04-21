@@ -79,3 +79,11 @@ This repository contains solutions to various LeetCode problems for practicing c
 17. [Hard: 2251. Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/)
 18. [Hard: 2276. Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/description/)
 19. [Hard: 2402. Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/description/)
+
+## K-way Merge
+
+1. [Easy: 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
+2. [Medium: 373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
+3. [Medium: 378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
+4. [Hard: 4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+5. [Hard: 23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
