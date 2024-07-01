@@ -1,11 +1,12 @@
-- Start by understanding the problem thoroughly.
-- Jot down cases that you need to test for to solidify your understanding of the problem.
-- List edge cases you need to account for to further solidify your understanding of the problem. Consider the following types of edge cases:
-  - boundary conditions
-  - overflows
-  - null checks
-  - duplicates
-- Build a strategy for solving the problem. If the problem involves multiple classes of test cases, then make sure to list all of these cases.
+- Read and understand the problem thoroughly.
+- Brainstorm test cases.
+  - Jot down starter test cases that you can think of based on an initial understanding of the problem.
+  - List edge cases you need to account for to further solidify your understanding of the problem. Consider the following types of edge cases:
+    - boundary conditions
+    - overflows
+    - null checks
+    - duplicates
+  - Group your test cases into multiple classes as you build out a strategy for solving the problem.
 - Write the code.
 - Perform a dry run using the test cases.
 - Run the code and fix errors.
