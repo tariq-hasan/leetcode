@@ -1,6 +1,9 @@
-# LeetCode Practice Questions
+# Data Structures
 
-This repository contains solutions to various LeetCode problems for practicing coding interviews.
+- [WIP] [Associative Arrays](data_structures/associative_arrays.md)
+- [WIP] [Trees](data_structures/trees.md)
+
+# Coding Patterns
 
 ## Two Pointers
 
