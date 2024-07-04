@@ -1,37 +1,103 @@
 # Table of Contents
 
 1. [Binary Tree](#binary-tree)
-   - [Binary Search Tree](#binary-search-tree)
 2. [N-ary Tree](#n-ary-tree)
-   - [Ternary Tree](#ternary-tree)
-3. [Self-Balancing Trees](#self-balancing-trees)
+3. [Balanced Trees](#balanced-trees)
+4. [Self-Balancing Trees](#self-balancing-trees)
    - [Binary Tree: AVL Tree](#binary-tree-avl-tree)
    - [Binary Tree: Red-Black Tree](#binary-tree-red-black-tree)
    - [N-ary Tree: B-Tree](#n-ary-tree-b-tree)
    - [N-ary Tree: B+-Tree](#n-ary-tree-b-tree-1)
-4. [Trie (Prefix Tree)](#trie-prefix-tree)
-5. [Segment Tree](#segment-tree)
-6. [Heap](#heap)
+5. [Trie (Prefix Tree)](#trie-prefix-tree)
+6. [Segment Tree](#segment-tree)
+7. [Heap](#heap)
    - [Binary Heap](#binary-heap)
    - [Priority Queue](#priority-queue)
 
 # Binary Tree
 
-- Definition: Each node has at most two children.
+- A binary tree is a hierarchical data structure in which each node has at most two children, commonly referred to as the left child and the right child.
 
-## Binary Search Tree
+<br/>
 
-- Definition: For any given node, all elements in the left subtree are smaller, and all elements in the right subtree are larger.
+- Key Characteristics of Binary Trees
+  - Nodes and Edges
+    - Node: Each element in the tree that contains data and links to its children.
+    - Edge: A connection between two nodes (parent and child).
+  - Root: The topmost node of the tree. There is only one root node in a binary tree.
+  - Leaf: A node that does not have any children. These are also known as terminal nodes.
+  - Internal Nodes: Nodes that have at least one child.
+  - Subtree: A tree formed by a node and its descendants.
+  - Height: The number of edges on the longest path from the root to a leaf.
+  - Depth: The number of edges from the root to a specific node.
 
-- Time complexity for insertion, deletion, and search operations: _O(h)_
-  - _h ~ log n_ in the average case of balanced trees
-  - _h ~ n_ in the worst case of skewed trees
+<br/>
+
+- Types of Binary Trees
+  - Full Binary Tree: Every node has either 0 or 2 children.
+  - Complete Binary Tree: All levels are completely filled except possibly the last level, which is filled from left to right.
+  - Perfect Binary Tree: All internal nodes have two children, and all leaf nodes are at the same level.
+  - Balanced Binary Tree: The height of the left and right subtrees of any node differ by at most one.
+  - Degenerate (or Pathological) Tree: Each parent node has only one child, making it essentially a linked list.
+
+<br/>
+
+- Binary Tree Traversal
+  - Traversal is the process of visiting all nodes in a specific order.
+  - In-order Traversal (Left, Root, Right)
+  - Pre-order Traversal (Root, Left, Right)
+  - Post-order Traversal (Left, Right, Root)
+  - Level-order Traversal (Breadth-First):
+
+<br/>
+
+- Applications of Binary Trees
+  - Binary Search Tree (BST)
+    - A binary tree where each node has a key, and the left child's key is less than the parent node's key, while the right child's key is greater.
+    - Time complexity for insertion, deletion, and search operations: _O(h)_
+      - _h ~ log n_ in the average case of balanced trees
+      - _h ~ n_ in the worst case of skewed trees
+  - Binary Heap
+    - A complete binary tree that satisfies the heap property.
+    - In a max heap, for any given node _i_, the value of _i_ is greater than or equal to the values of its children, and the highest value is at the root.
+    - In a min heap, the value of _i_ is less than or equal to the values of its children, and the lowest value is at the root.
+  - Expression Trees
+    - Used to represent arithmetic expressions.
+    - Internal nodes represent operators, and leaf nodes represent operands.
+  - Huffman Coding Tree
+    - Used in data compression algorithms like Huffman coding.
 
 # N-ary Tree
 
-## Ternary Tree
+- Ternary Tree
+
+# Balanced Trees
+
+- Definition: A balanced tree is any tree data structure that maintains its height to be as small as possible, typically logarithmic in the number of nodes, to ensure efficient operations.
+- Balancing Criteria: Different types of balanced trees have specific criteria to define what constitutes balance. For example:
+  - AVL Trees: Maintain the height difference (balance factor) between the left and right subtrees of any node to be at most 1.
+  - Red-Black Trees: Enforce properties involving node colors to ensure that the longest path from the root to a leaf is no more than twice the length of the shortest path.
 
 # Self-Balancing Trees
+
+- Definition: Self-balancing trees are a subset of balanced trees that automatically adjust their structure during insertions and deletions to maintain their balanced property.
+
+- Automatic Rebalancing: These trees have built-in mechanisms (such as rotations, color changes, or node splitting/merging) to ensure that the tree remains balanced after any modification.
+
+- Examples:
+  - AVL Trees: Perform rotations to maintain the height balance factor after insertions and deletions.
+  - Red-Black Trees: Use rotations and color changes to maintain their properties.
+  - B-Trees: Split or merge nodes to maintain balance when inserting or deleting keys.
+
+- Manual vs. Automatic Balancing
+  - Balanced Trees: The term can refer to any tree that is balanced, whether it requires manual intervention to maintain balance or does it automatically.
+  - Self-Balancing Trees: Specifically refer to trees that have automatic balancing mechanisms built in.
+- Common Usage
+  - Balanced Trees: Can refer to any tree that achieves balance, including those that are not self-adjusting (e.g., a perfectly balanced static binary search tree created from a sorted array).
+  - Self-Balancing Trees: Always refer to trees that adjust themselves to maintain balance, ensuring consistent performance for dynamic sets of data.
+
+- All self-balancing trees are balanced trees, but not all balanced trees are self-balancing.
+- The key distinction is that self-balancing trees automatically maintain their balance through specific rebalancing mechanisms, whereas balanced trees may achieve balance through other means, which might not necessarily involve automatic adjustments during insertions and deletions.
 
 - Definition: The tree structure automatically adjusts to maintain a balanced height.
 
