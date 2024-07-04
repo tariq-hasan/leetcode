@@ -1,21 +1,35 @@
 # Table of Contents
 
-1. [Self-Balancing Trees](#associative-arrays--maps--dictionaries)
-   - [Binary Tree](#binary-tree)
-     - [AVL Tree](#avl-tree)
-     - [Red-Black Tree](#red-black-tree)
-   - [N-ary Tree](#n-ary-tree)
-     - [B-Tree](#b-tree)
-     - [B+-Tree](#b-tree-1)
-2. [Binary Tree](#binary-tree-1)
+1. [Binary Tree](#binary-tree)
    - [Binary Search Tree](#binary-search-tree)
-3. [N-ary Tree](#n-ary-tree-1)
+2. [N-ary Tree](#n-ary-tree)
    - [Ternary Tree](#ternary-tree)
+3. [Self-Balancing Trees](#self-balancing-trees)
+   - [Binary Tree: AVL Tree](#binary-tree-avl-tree)
+   - [Binary Tree: Red-Black Tree](#binary-tree-red-black-tree)
+   - [N-ary Tree: B-Tree](#n-ary-tree-b-tree)
+   - [N-ary Tree: B+-Tree](#n-ary-tree-b-tree-1)
 4. [Trie (Prefix Tree)](#trie-prefix-tree)
 5. [Segment Tree](#segment-tree)
 6. [Heap](#heap)
    - [Binary Heap](#binary-heap)
    - [Priority Queue](#priority-queue)
+
+# Binary Tree
+
+- Definition: Each node has at most two children.
+
+## Binary Search Tree
+
+- Definition: For any given node, all elements in the left subtree are smaller, and all elements in the right subtree are larger.
+
+- Time complexity for insertion, deletion, and search operations: _O(h)_
+  - _h ~ log n_ in the average case of balanced trees
+  - _h ~ n_ in the worst case of skewed trees
+
+# N-ary Tree
+
+## Ternary Tree
 
 # Self-Balancing Trees
 
@@ -43,9 +57,7 @@
 
 - If not properly balanced, the tree can degenerate into a linked list, leading to degraded performance (worst-case O(n) time complexity for operations). Explain.
 
-## Binary Tree
-
-### AVL Tree
+## Binary Tree: AVL Tree
 
 - Balancing Method: Ensures that the heights of the left and right subtrees of any node differ by at most one.
 
@@ -63,7 +75,7 @@
 
 - What is the AVL property?
 
-### Red-Black Tree
+## Binary Tree: Red-Black Tree
 
 - Balancing Method: Nodes are colored red or black to ensure that the tree remains approximately balanced.
 
@@ -81,9 +93,7 @@
 
 - What does it mean for a red-black tree to guarantee balance using a set of color constraints on nodes?
 
-## N-ary Tree
-
-### B-Tree
+## N-ary Tree: B-Tree
 
 - maintain sorted data and allow searches, sequential access, insertions, and deletions in logarithmic time
 
@@ -101,7 +111,7 @@
 
 - What does it mean for a B-tree to have a variable number of children per node and be balanced in terms of the number of keys per node?
 
-### B+-Tree
+### N-ary Tree: B+-Tree
 
 - A variant of the B-tree that maintains balance to ensure efficient operations such as search, insertion, and deletion.
 
@@ -116,22 +126,6 @@
 - Usage: Often used in database indexing due to its ability to handle range queries efficiently.
 
 - Advantages: Better performance for sequential access and range queries compared to B-Trees.
-
-# Binary Tree
-
-- Definition: Each node has at most two children.
-
-## Binary Search Tree
-
-- Definition: For any given node, all elements in the left subtree are smaller, and all elements in the right subtree are larger.
-
-- Time complexity for insertion, deletion, and search operations: _O(h)_
-  - _h ~ log n_ in the average case of balanced trees
-  - _h ~ n_ in the worst case of skewed trees
-
-# N-ary Tree
-
-## Ternary Tree
 
 # Trie (Prefix Tree)
 
