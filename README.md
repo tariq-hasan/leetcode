@@ -124,3 +124,18 @@
 30. [Hard: 301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/description/)
 31. [Hard: 425. Word Squares](https://leetcode.com/problems/word-squares/description/)
 32. [Hard: 489. Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/description/)
+
+## Bit Manipulation
+
+### XOR
+
+1. [Easy: 136. Single Number](https://leetcode.com/problems/single-number/description/)
+2. [Easy: 268. Missing Number](https://leetcode.com/problems/missing-number/description/)
+3. [Easy: 389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
+
+### AND, Left-Shift and Right-Shift
+
+1. [Easy: 190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
+2. [Easy: 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
+3. [Easy: 231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
+4. [Easy: 338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
