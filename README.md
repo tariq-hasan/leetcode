@@ -142,3 +142,7 @@
 13. [Medium: 371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description)
 14. [Medium: 477. Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description)
 15. [Medium: 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
+
+## Modified Binary Search
+
+1. [Easy: 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
