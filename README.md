@@ -127,15 +127,18 @@
 
 ## Bit Manipulation
 
-### XOR
-
 1. [Easy: 136. Single Number](https://leetcode.com/problems/single-number/description/)
-2. [Easy: 268. Missing Number](https://leetcode.com/problems/missing-number/description/)
-3. [Easy: 389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
-
-### AND, Left-Shift and Right-Shift
-
-1. [Easy: 190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
-2. [Easy: 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
-3. [Easy: 231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
-4. [Easy: 338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
+2. [Easy: 190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
+3. [Easy: 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
+4. [Easy: 231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
+5. [Easy: 268. Missing Number](https://leetcode.com/problems/missing-number/description/)
+6. [Easy: 338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
+7. [Easy: 389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
+8. [Easy: 461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
+9. [Easy: 476. Number Complement](https://leetcode.com/problems/number-complement/description/)
+10. [Easy: 832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
+11. [Medium: 137. Single Number II](https://leetcode.com/problems/single-number-ii/description/)
+12. [Medium: 201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/)
+13. [Medium: 371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description)
+14. [Medium: 477. Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description)
+15. [Medium: 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
