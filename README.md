@@ -145,4 +145,7 @@
 
 ## Modified Binary Search
 
+### Search in Array
+
 1. [Easy: 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
+2. [Easy: 744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
