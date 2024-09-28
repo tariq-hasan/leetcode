@@ -5,9 +5,11 @@
 
 # Coding Patterns
 
-## Two Pointers
+## Arrays
 
-### K-Sum Problems
+### Two Pointers
+
+#### K-Sum Problems
 
 1. [Easy: 1. Two Sum](https://leetcode.com/problems/two-sum/description/)
 2. [Medium: 167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
@@ -17,13 +19,13 @@
 6. [Medium: 1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/description/)
 7. [Medium: 532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/)
 
-### Palindrome Problems
+#### Palindrome Problems
 
 8. [Easy: 9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 9. [Easy: 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
 10. [Easy: 680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
 
-### Miscellaneous Problems
+#### Miscellaneous Problems
 
 11. [Easy: 283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 12. [Easy: 392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
@@ -33,7 +35,7 @@
 16. [Medium: 151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/)
 17. [Medium: 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/)
 
-## Fast and Slow Pointers
+### Fast and Slow Pointers
 
 1. [Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
 2. [Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/description/)
@@ -41,7 +43,7 @@
 4. [Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/description/)
 5. [Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
 
-## Sliding Window
+### Sliding Window
 
 1. [Easy: 121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 2. [Easy: 643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/)
@@ -61,7 +63,7 @@
 16. [Hard: 239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/)
 17. [Hard: 727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/description/)
 
-## Merge Intervals
+### Merge Intervals
 
 1. [Easy: 228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/)
 2. [Easy: 252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/description/)
@@ -83,7 +85,7 @@
 18. [Hard: 2276. Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/description/)
 19. [Hard: 2402. Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/description/)
 
-## K-way Merge
+### K-way Merge
 
 1. [Easy: 88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
 2. [Medium: 373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
@@ -91,7 +93,12 @@
 4. [Hard: 4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 5. [Hard: 23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
 
+### Miscellaneous
+
+1. [Easy: 1351. Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/description/)
+
 ## Backtracking
+
 1. [Medium: 46. Permutations](https://leetcode.com/problems/permutations/description/)
 2. [Medium: 47. Permutations II](https://leetcode.com/problems/permutations-ii/description/)
 3. [Medium: 31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
