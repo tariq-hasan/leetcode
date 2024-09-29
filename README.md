@@ -162,3 +162,4 @@
 
 1. [Easy: 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
 2. [Easy: 367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/)
+3. [Easy: 441. Arranging Coins](https://leetcode.com/problems/arranging-coins/description/)
