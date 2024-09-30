@@ -167,3 +167,4 @@
 ### Tricky Invariant
 
 1. [Medium: 275. H-Index II](https://leetcode.com/problems/h-index-ii/description/)
+2. [Medium: 540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
