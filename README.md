@@ -158,6 +158,10 @@
 2. [Easy: 744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
 3. [Medium: 34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 
+### Standard Search
+
+1. [Easy: 278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
+
 ### Math
 
 1. [Easy: 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
