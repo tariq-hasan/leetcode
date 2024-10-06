@@ -162,6 +162,8 @@
 
 1. [Easy: 278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
 2. [Easy: 374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/)
+3. [Medium: 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
+4. [Medium: 702. Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/)
 
 ### Math
 
@@ -173,6 +175,8 @@
 
 1. [Medium: 275. H-Index II](https://leetcode.com/problems/h-index-ii/description/)
 2. [Medium: 540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
+3. [Medium: 658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/)
+4. [Medium: 852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
 
 ### As a Tool
 
