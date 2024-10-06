@@ -161,6 +161,7 @@
 ### Standard Search
 
 1. [Easy: 278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
+2. [Easy: 374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/)
 
 ### Math
 
@@ -172,3 +173,8 @@
 
 1. [Medium: 275. H-Index II](https://leetcode.com/problems/h-index-ii/description/)
 2. [Medium: 540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
+
+### As a Tool
+
+1. [Easy: 1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/description/)
+2. [Medium: 300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
