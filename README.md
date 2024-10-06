@@ -182,3 +182,8 @@
 
 1. [Easy: 1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/description/)
 2. [Medium: 300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+
+### On Solution Space
+
+1. [Medium: 875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
+2. [Medium: 1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)
