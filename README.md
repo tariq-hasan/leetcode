@@ -182,8 +182,10 @@
 
 1. [Easy: 1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/description/)
 2. [Medium: 300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+3. [Medium: 1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/)
 
 ### On Solution Space
 
 1. [Medium: 875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
 2. [Medium: 1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)
+3. [Medium: 1283. Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/)
