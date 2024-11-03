@@ -132,6 +132,9 @@
 31. [Hard: 425. Word Squares](https://leetcode.com/problems/word-squares/description/)
 32. [Hard: 489. Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/description/)
 
+## Custom Data Structures
+1. [Easy: 359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/description/)
+
 ## Bit Manipulation
 
 1. [Easy: 136. Single Number](https://leetcode.com/problems/single-number/description/)
