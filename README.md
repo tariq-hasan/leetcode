@@ -192,3 +192,8 @@
 1. [Medium: 875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
 2. [Medium: 1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)
 3. [Medium: 1283. Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/)
+
+## Greedy Techniques
+
+1. [Easy: 455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
+2. [Easy: 1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/description/)
