@@ -52,3 +52,22 @@ class Solution:
                 i = i + 1
             out = max(out, j - i + 1)
         return out
+
+
+class Solution:
+    def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
+        """
+        The time complexity is O(n).
+        The space complexity is O(n).
+        """
+        freq = {}
+        out = 0
+        for j in range(len(s)):
+            freq[s[j]] = freq.get(s[j], 0) + 1
+            if len(freq) <= k:
+                out = out + 1
+            else:
+                freq[s[j - out]] = freq[s[j - out]] - 1
+                if freq[s[j - out]] == 0:
+                    del freq[s[j - out]]
+        return out
