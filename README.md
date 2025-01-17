@@ -40,8 +40,9 @@
 1. [Easy: 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
 2. [Easy: 202. Happy Number](https://leetcode.com/problems/happy-number/description/)
 3. [Easy: 234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
-4. [Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/description/)
-5. [Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+4. [Easy: 876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+5. [Medium: 142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)
+6. [Medium: 457. Circular Array Loop](https://leetcode.com/problems/circular-array-loop/description/)
 
 ### Sliding Window
 
@@ -62,6 +63,7 @@
 15. [Hard: 76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
 16. [Hard: 239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/)
 17. [Hard: 727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/description/)
+18. [Hard: 992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
 
 ### Merge Intervals
 
