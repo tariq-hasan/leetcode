@@ -2,7 +2,7 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         """
         The time complexity is O(n).
-        The space complexity is O(n).
+        The space complexity is O(1).
         """
         seen = set()
         i = out = 0
@@ -20,7 +20,7 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         """
         The time complexity is O(n).
-        The space complexity is O(n).
+        The space complexity is O(1).
         """
         freq = {}
         i = out = 0
