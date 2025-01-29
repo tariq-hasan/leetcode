@@ -64,6 +64,7 @@
 16. [Hard: 239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/)
 17. [Hard: 727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/description/)
 18. [Hard: 992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
+19. [Hard: 1044. Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/description/)
 
 ### Merge Intervals
 
