@@ -15,7 +15,7 @@ class Solution:
         timestamp.sort()
 
         used_capacity = 0
-        for time, passenger_change in timestamp:
+        for _, passenger_change in timestamp:
             used_capacity = used_capacity + passenger_change
             if used_capacity > capacity:
                 return False
