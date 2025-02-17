@@ -21,3 +21,22 @@ class Solution:
 
 
 
+class Solution:
+    def minGroups(self, intervals: List[List[int]]) -> int:
+        """
+        The time complexity is O(n log n).
+        The space complexity is O(n).
+        """
+        freq = {}
+        for interval in intervals:
+            freq[interval[0]] = freq.get(interval[0], 0) + 1
+            freq[interval[1] + 1] = freq.get(interval[1] + 1, 0) - 1
+
+        out = concurrent_intervals = 0
+        for i in sorted(freq.keys()):
+            concurrent_intervals = concurrent_intervals + freq[i]
+            out = max(out, concurrent_intervals)
+        return out
+
+
+
