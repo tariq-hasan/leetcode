@@ -6,13 +6,15 @@ class Solution:
         The time complexity is O(n).
         The space complexity is O(1).
         """
-        ranges = []
+        out = []
         i = 0
-        for j in range(len(nums)):
-            if (j < len(nums) - 1 and nums[j] + 1 != nums[j + 1]) or (j == len(nums) - 1):
-                if i == j:
-                    ranges.append(f"{nums[i]}")
-                else:
-                    ranges.append(f"{nums[i]}->{nums[j]}")
-                i = j + 1
-        return ranges
+        while i < len(nums): 
+            start = nums[i]
+            while i + 1 < len(nums) and nums[i] + 1 == nums[i + 1]:
+                i = i + 1
+            if start != nums[i]:
+                out.append(str(start) + "->" + str(nums[i]))
+            else:
+                out.append(str(nums[i]))
+            i = i + 1
+        return out
