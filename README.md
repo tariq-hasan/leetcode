@@ -107,6 +107,26 @@
 
 1. [Easy: 1351. Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/description/)
 
+## Stacks
+
+1. [Easy: 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
+2. [Easy: 1047. Remove All Adjacent Duplicates in String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
+3. [Medium: 71. Simplify Path](https://leetcode.com/problems/simplify-path/description/)
+4. [Medium: 150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
+5. [Medium: 227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/)
+6. [Medium: 316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/description/)
+7. [Medium: 394. Decode String](https://leetcode.com/problems/decode-string/description/)
+8. [Medium: 402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
+9. [Medium: 456. 132 Pattern](https://leetcode.com/problems/132-pattern/description/)
+10. [Medium: 503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
+11. [Medium: 735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/)
+12. [Medium: 739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
+13. [Medium: 901. Online Stock Span](https://leetcode.com/problems/online-stock-span/description/)
+14. [Medium: 1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/)
+15. [Medium: 2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/description/)
+16. [Hard: 84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+17. [Hard: 224. Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)
+
 ## Backtracking
 
 1. [Medium: 46. Permutations](https://leetcode.com/problems/permutations/description/)
