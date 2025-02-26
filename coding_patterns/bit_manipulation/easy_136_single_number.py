@@ -6,7 +6,7 @@ class Solution:
         The time complexity is O(n).
         The space complexity is O(1).
         """
-        res = 0
+        out = 0
         for num in nums:
-            res = res ^ num
-        return res
+            out = out ^ num
+        return out
