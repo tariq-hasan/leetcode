@@ -10,6 +10,7 @@ class Solution:
             n = n >> 1
         return out
 
+
 class Solution:
     def hammingWeight(self, n: int) -> int:
         """
@@ -22,6 +23,7 @@ class Solution:
                 out = out + 1
             mask = mask << 1
         return out
+
 
 class Solution:
     def hammingWeight(self, n: int) -> int:
