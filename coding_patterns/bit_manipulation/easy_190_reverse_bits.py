@@ -4,12 +4,12 @@ class Solution:
         The time complexity if O(1).
         The space complexity if O(1).        
         """
-        res, power = 0, 31
+        out, power = 0, 31
         while n:
-            res += (n & 1) << power
+            out = out + ((n & 1) << power)
             n = n >> 1
-            power -= 1
-        return res
+            power = power - 1
+        return out
 
 
 class Solution:
