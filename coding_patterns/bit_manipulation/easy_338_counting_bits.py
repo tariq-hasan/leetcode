@@ -6,17 +6,16 @@ class Solution:
         The time complexity is O(n).
         The space complexity is O(1).
         """
-        out = [0] * (n + 1)
-        x, b = 0, 1
-        # [0, b) is calculated
-        while b <= n:
-            # generate [b, 2b) or [b, n) from [0, b)
-            while x < b and x + b <= n:
-                out[x + b] = out[x] + 1
-                x = x + 1
-            x = 0 # reset x
-            b = b << 1 # b = 2b
+        out = [0]
+        j = 1
+        while j < n + 1:
+            i = 0
+            while i < j and i + j <= n:
+                out.append(out[i] + 1)
+                i = i + 1
+            j = j << 1
         return out
+
 
 
 class Solution:
