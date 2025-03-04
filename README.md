@@ -127,6 +127,17 @@
 16. [Hard: 84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
 17. [Hard: 224. Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)
 
+## Hash Maps
+
+1. [Easy: 205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)
+2. [Easy: 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/)
+3. [Easy: 496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
+4. [Easy: 1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/description/)
+5. [Easy: 2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/description/)
+6. [Medium: 166. Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/description/)
+7. [Medium: 1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)
+8. [Medium: 2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/description/)
+
 ## Backtracking
 
 1. [Medium: 46. Permutations](https://leetcode.com/problems/permutations/description/)
