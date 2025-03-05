@@ -187,8 +187,10 @@
 ### Search in Array
 
 1. [Easy: 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
-2. [Easy: 744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
-3. [Medium: 34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+2. [Easy: 704. Binary Search](https://leetcode.com/problems/binary-search/description/)
+3. [Easy: 744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
+4. [Medium: 34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+5. [Medium: 436. Find Right Interval](https://leetcode.com/problems/find-right-interval/description/)
 
 ### Standard Search
 
