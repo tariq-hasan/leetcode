@@ -5,7 +5,7 @@ class Solution:
         The space complexity is O(1).
         """
         if n < 2:
-            return 1 if n else 0
+            return n
         i, j = 0, 1
         for _ in range(n - 1):
             i, j = j, i + j
