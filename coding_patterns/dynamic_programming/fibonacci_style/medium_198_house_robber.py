@@ -22,7 +22,7 @@ class Solution:
         The time complexity is O(n).
         The space complexity is O(1).
         """
-        i, j = nums[-1], 0
-        for k in range(len(nums) - 2, -1, -1):
+        i = j = 0
+        for k in range(len(nums) - 1, -1, -1):
             i, j = max(i, j + nums[k]), i
         return i
