@@ -19,7 +19,7 @@ class Solution:
         The time complexity is O(n).
         The space complexity is O(1).
         """
-        i = j = 0
-        for num in nums[::-1]:
-            i, j = max(i, j + num), i
-        return i
+        i = j = k = 0
+        for num in nums:
+            i, j, k = j, k, max(i, j) + num
+        return max(j, k)
