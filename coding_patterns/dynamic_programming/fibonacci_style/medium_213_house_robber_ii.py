@@ -10,10 +10,10 @@ class Solution:
         if len(nums) == 1:
             return nums[0]
 
-        def rob_linear(arr: List[int]) -> int:
-            i, j = 0, 0
-            for num in arr:
-                i, j = j, max(j, i + num)
+        def rob_linear(nums: List[int]) -> int:
+            i = j = 0
+            for num in nums:
+                i, j = j, max(num + i, j)
             return j
 
         return max(rob_linear(nums[:-1]), rob_linear(nums[1:]))
