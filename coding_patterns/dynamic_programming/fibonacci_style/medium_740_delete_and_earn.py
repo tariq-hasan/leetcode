@@ -13,6 +13,6 @@ class Solution:
 
         i = j = 0
         for num in total:
-            i, j = j, max(j, i + num)
+            i, j = j, max(num + i, j)
 
         return j
