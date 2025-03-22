@@ -9,8 +9,7 @@ class Solution:
         """
         out = []
         for i in range(numRows):
-            row = [0] * (i + 1)
-            row[0] = row[-1] = 1
+            row = [1] * (i + 1)
             for j in range(1, len(row) - 1):
                 row[j] = out[-1][j - 1] + out[-1][j]
             out.append(row)
