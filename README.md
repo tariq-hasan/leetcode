@@ -266,10 +266,14 @@
 
 ## Dynamic Programming
 
+### Basic Foundations
+
+#### Pascal’s Triangle (Combinatorial DP)
+
 1. [Easy: 118. Pascal’s Triangle](https://leetcode.com/problems/pascals-triangle/description/)
 2. [Easy: 119. Pascal’s Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/)
 
-### Fibonacci Style
+### Fibonacci-Style DP
 
 #### Basic Fibonacci Recurrence
 
@@ -286,3 +290,48 @@
 1. [Medium: 198. House Robber](https://leetcode.com/problems/house-robber/description/)
 2. [Medium: 213. House Robber II](https://leetcode.com/problems/house-robber-ii/description/)
 3. [Medium: 740. Delete and Earn](https://leetcode.com/problems/delete-and-earn/description/)
+
+### General 1D DP
+
+#### Linear Recurrence (Fibonacci-Style)
+
+1. [Medium: 650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/)
+2. [Medium: 651. 4 Keys keyboard](https://leetcode.com/problems/4-keys-keyboard/description/)
+3. [Medium: 790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/description/)
+4. [Medium: 2466. Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/description/)
+
+#### Partitioning (Subset or Breakpoint Decisions)
+
+1. [Medium: 91. Decode Ways](https://leetcode.com/problems/decode-ways/description/)
+2. [Hard: 639. Decode Ways II](https://leetcode.com/problems/decode-ways-ii/description/)
+3. [Hard: 1416. Restore the Array](https://leetcode.com/problems/restore-the-array/description/)
+
+#### Interval-Based DP (Segmentation Problems)
+
+1. [Medium: 983. Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/description/)
+2. [Medium: 1024. Video Stitching](https://leetcode.com/problems/video-stitching/description/)
+3. [Hard: 1259. Handshakes That Don’t Cross](https://leetcode.com/problems/handshakes-that-dont-cross/description/)
+
+#### Decision-Based DP (Knapsack-Style)
+
+1. [Medium: 322. Coin Change](https://leetcode.com/problems/coin-change/description/)
+2. [Medium: 2140. Solving Questions with Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description/)
+3. [Hard: 871. Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/)
+
+#### Maximum Subarray/Sequence DP (Kadane’s or DP)
+
+1. [Medium: 152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/)
+2. [Medium: 1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/description/)
+3. [Medium: 1567. Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/description/)
+
+#### Wiggle / Alternating Pattern DP
+
+1. [Medium: 376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/)
+
+#### Parentheses Matching DP
+
+1. [Hard: 32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/)
+
+#### Water Trapping / Geometry-Based DP
+
+1. [Hard: 42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
