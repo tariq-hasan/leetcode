@@ -11,7 +11,7 @@ class Solution:
             if curr_day > days[-1]:
                 return 0
 
-            if curr_day not in is_travel_needed:
+            if curr_day + 1 not in is_travel_needed:
                 return solve(dp, curr_day + 1)
 
             if dp[curr_day] != -1:
@@ -21,10 +21,10 @@ class Solution:
             seven_day = costs[1] + solve(dp, curr_day + 7)
             thirty_day = costs[2] + solve(dp, curr_day + 30)
 
-            dp[curr_day] = min(one_day, min(seven_day, thirty_day))
+            dp[curr_day] = min(one_day, seven_day, thirty_day)
             return dp[curr_day]
 
-        dp = [-1] * (days[-1] + 1)
+        dp = [-1] * days[-1]
         is_travel_needed = set(days)
 
-        return solve(dp, 1)
+        return solve(dp, 0)
