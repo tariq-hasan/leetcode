@@ -226,8 +226,56 @@
 
 ## Greedy Techniques
 
+### Classic Greedy Problems
+1. [Easy: 1005. Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/)
+2. [Medium: 53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+3. [Medium: 621. Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
+4. [Medium: 678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
+5. [Medium: 1055. Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/description/)
+6. [Medium: 1846. Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/description/)
+
+### Interval & Scheduling Problems
+
 1. [Easy: 455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
+2. [Medium: 763. Partition Labels](https://leetcode.com/problems/partition-labels/description/)
+3. [Medium: 1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/description/)
+4. [Medium: 1353. Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/description/)
+5. [Hard: 632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
+
+### Resource Allocation & Optimization
+
+1. [Easy: 860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
 2. [Easy: 1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/description/)
+3. [Medium: 134. Gas Station](https://leetcode.com/problems/gas-station/description/)
+4. [Medium: 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
+5. [Hard: 1326. Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/description/)
+6. [Hard: 2551. Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags/description/)
+
+### Sequence Reconstruction
+
+1. [Hard: 871. Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/)
+2. [Medium: 948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)
+3. [Hard: 2054. Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/description/)
+
+### Path & Movement Optimization
+
+1. [Medium: 45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/)
+2. [Medium: 55. Jump Game](https://leetcode.com/problems/jump-game/description/)
+3. [Medium: 1888. Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/description/)
+
+### Ordering & Sorting-Based Decisions
+
+1. [Medium: 406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/)
+2. [Medium: 649. Dota2 Senate](https://leetcode.com/problems/dota2-senate/description/)
+
+### Cost Minimization
+
+1. [Medium: 1578. Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/)
+2. [Hard: 135. Candy](https://leetcode.com/problems/candy/description/)
+
+### Kadane’s Algorithm
+
+1. [Medium: 918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/description/)
 
 ## Backtracking
 
