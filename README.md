@@ -161,26 +161,75 @@
 
 ## Bit Manipulation
 
+### XOR Applications
+
+#### Finding Missing or Unique Numbers
+
 1. [Easy: 136. Single Number](https://leetcode.com/problems/single-number/description/)
-2. [Easy: 190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
-3. [Easy: 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
-4. [Easy: 231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
-5. [Easy: 268. Missing Number](https://leetcode.com/problems/missing-number/description/)
-6. [Easy: 338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
-7. [Easy: 389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
-8. [Easy: 401. Binary Watch](https://leetcode.com/problems/binary-watch/description/)
-9. [Easy: 461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
-10. [Easy: 476. Number Complement](https://leetcode.com/problems/number-complement/description/)
-11. [Easy: 832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
-12. [Easy: 1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/)
-13. [Medium: 137. Single Number II](https://leetcode.com/problems/single-number-ii/description/)
-14. [Medium: 201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/)
-15. [Medium: 260. Single Number III](https://leetcode.com/problems/single-number-iii/description/)
-16. [Medium: 318. Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)
-17. [Medium: 371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description)
-18. [Medium: 421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/)
-19. [Medium: 477. Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description)
-20. [Medium: 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
+2. [Easy: 268. Missing Number](https://leetcode.com/problems/missing-number/description/)
+3. [Easy: 389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
+4. [Medium: 137. Single Number II](https://leetcode.com/problems/single-number-ii/description/)
+5. [Medium: 260. Single Number III](https://leetcode.com/problems/single-number-iii/description/)
+
+#### XOR Optimization Problems
+
+1. [Medium: 421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/)
+2. [Medium: 1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/description/)
+
+#### Subarray XOR Problems
+
+1. [Medium: 1877. XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/description/)
+2. [Medium: 1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/description/)
+3. Hard: 2565. Subsequence XOR Queries
+
+### Bit Counting
+
+1. [Easy: 191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
+2. [Easy: 338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
+3. [Easy: 762. Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/description/)
+4. [Medium: 477. Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description)
+
+### Bit Manipulation
+
+#### Basic Operations
+
+1. [Easy: 476. Number Complement](https://leetcode.com/problems/number-complement/description/)
+2. [Easy: 693. Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)
+3. [Easy: 832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
+4. [Easy: 1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/)
+5. [Easy: 1342. Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/)
+6. [Medium: 89. Gray Code](https://leetcode.com/problems/gray-code/description/)
+
+#### Bit Tricks
+
+1. [Easy: 231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
+2. [Easy: 1356. Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/)
+3. [Medium: 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
+
+### Bit Shifting
+
+1. [Easy: 190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
+2. Medium: 861. Score After Flipping Matrix
+
+### Bitwise AND Operations
+
+1. [Medium: 201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/)
+2. [Medium: 1529. Minimum Suffix Flips](https://leetcode.com/problems/score-after-flipping-matrix/description/)
+
+### Bit Masking
+
+1. [Easy: 461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
+2. [Medium: 318. Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)
+3. [Medium: 397. Integer Replacement](https://leetcode.com/problems/integer-replacement/description/)
+4. [Medium: 1461. Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/description/)
+
+### Application Problems
+
+1. [Easy: 401. Binary Watch](https://leetcode.com/problems/binary-watch/description/)
+2. [Medium: 29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)
+3. [Medium: 371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description)
+4. [Medium: 388. Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/description/)
+5. [Hard: 233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one/description/)
 
 ## Modified Binary Search
 
