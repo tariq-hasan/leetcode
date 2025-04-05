@@ -69,3 +69,34 @@ class Solution2:
         # Recursive checks (pre-order: root, left, right)
         return (self.isSameTree(p.left, q.left) and 
                 self.isSameTree(p.right, q.right))
+
+
+class Solution3:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Iterative DFS (pre-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) if balanced
+            - Average: O(log n)
+            - Worst: O(n) if tree is skewed
+        """
+        # Initialize stack with root pair
+        stack = [(p, q)]
+        
+        while stack:
+            node1, node2 = stack.pop()
+            
+            # Both nodes are None, continue checking other nodes
+            if not node1 and not node2:
+                continue
+                
+            # One node is None or values don't match
+            if not node1 or not node2 or node1.val != node2.val:
+                return False
+                
+            # Pre-order: Push right then left (so left is processed first)
+            stack.append((node1.right, node2.right))
+            stack.append((node1.left, node2.left))
+            
+        return True
