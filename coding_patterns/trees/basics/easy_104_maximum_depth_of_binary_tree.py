@@ -11,6 +11,10 @@ class TreeNode:
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
+        """
+        The time complexity is O(n).
+        The space complexity is O(n).
+        """
         if root is None:
             return 0
         else:
