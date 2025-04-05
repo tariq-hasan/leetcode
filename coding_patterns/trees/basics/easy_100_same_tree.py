@@ -166,3 +166,29 @@ class Solution5:
             
         # Check if both trees were fully traversed
         return not p and not q and not stack1 and not stack2
+
+
+class Solution6:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Recursive DFS (post-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n)
+            - Worst: O(n) for skewed tree
+        """
+        # Helper function for post-order traversal
+        def postorder(node1, node2):
+            # Base cases
+            if not node1 and not node2:
+                return True
+            if not node1 or not node2:
+                return False
+            
+            # Post-order: left, right, root
+            return (postorder(node1.left, node2.left) and
+                   postorder(node1.right, node2.right) and
+                   node1.val == node2.val)
+            
+        return postorder(p, q)
