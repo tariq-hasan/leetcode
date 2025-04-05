@@ -126,3 +126,43 @@ class Solution4:
                    inorder(node1.right, node2.right))
             
         return inorder(p, q)
+
+
+class Solution5:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Iterative DFS (in-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) if balanced
+            - Average: O(log n)
+            - Worst: O(n) if tree is skewed
+        """
+        # Separate stacks for each tree
+        stack1, stack2 = [], []
+        
+        # In-order: left, root, right
+        while (p or stack1) and (q or stack2):
+            # Traverse to leftmost nodes
+            while p and q:
+                stack1.append(p)
+                stack2.append(q)
+                p = p.left
+                q = q.left
+                
+            # If one tree has more left children than the other
+            if p or q:
+                return False
+                
+            # Process current nodes
+            p = stack1.pop()
+            q = stack2.pop()
+            if p.val != q.val:
+                return False
+                
+            # Move to right subtrees
+            p = p.right
+            q = q.right
+            
+        # Check if both trees were fully traversed
+        return not p and not q and not stack1 and not stack2
