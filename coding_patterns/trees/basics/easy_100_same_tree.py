@@ -192,3 +192,55 @@ class Solution6:
                    node1.val == node2.val)
             
         return postorder(p, q)
+
+
+class Solution7:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Iterative DFS (post-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) if balanced
+            - Average: O(log n)
+            - Worst: O(n) if tree is skewed
+        """
+        # Helper function to get post-order traversal result
+        def postorder_traversal(root):
+            result, stack = [], []
+            last_visited = None
+            node = root
+            
+            # Post-order: left, right, root
+            while node or stack:
+                # Go to leftmost node
+                if node:
+                    stack.append(node)
+                    node = node.left
+                else:
+                    # Peek at the top of stack
+                    peek = stack[-1]
+                    
+                    # If right child exists and not visited yet, go right
+                    if peek.right and last_visited != peek.right:
+                        node = peek.right
+                    else:
+                        # Visit the node
+                        result.append(peek)
+                        last_visited = stack.pop()
+            
+            return result
+        
+        # Get post-order traversal results for both trees
+        nodes_p = postorder_traversal(p)
+        nodes_q = postorder_traversal(q)
+        
+        # Compare lengths
+        if len(nodes_p) != len(nodes_q):
+            return False
+            
+        # Compare values
+        for node1, node2 in zip(nodes_p, nodes_q):
+            if node1.val != node2.val:
+                return False
+                
+        return True
