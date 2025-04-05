@@ -11,6 +11,10 @@ class TreeNode:
 
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        The time complexity is O(n).
+        The space complexity is O(n).
+        """
         if not p and not q:
             return True
 
