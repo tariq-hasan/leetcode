@@ -10,54 +10,62 @@ class TreeNode:
         self.right = right
 
 
-class Solution:
+class Solution1:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
-        The time complexity is O(n).
-        The space complexity is O(n).
+        Strategy: Iterative BFS
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(1) if both trees are null or root-only
+            - Average: O(w) where w = max width of the tree
+            - Worst: O(n) if all nodes are at one level
         """
-        if not p and not q:
-            return True
-
-        if not p or not q:
-            return False
-
-        if p.val != q.val:
-            return False
-
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
-
-
-class Solution:
-    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        """
-        The time complexity is O(n).
-        The space complexity is O(n).
-        """
-        def check(p: TreeNode, q: TreeNode) -> bool:
-            if not p and not q:
+        # Helper function to compare two nodes
+        def check(node1: TreeNode, node2: TreeNode) -> bool:
+            if not node1 and not node2:
                 return True
-
-            if not p or not q:
+            if not node1 or not node2:
                 return False
-
-            if p.val != q.val:
+            if node1.val != node2.val:
                 return False
-
             return True
 
-        deq = deque(
-            [
-                (p, q),
-            ]
-        )
-        while deq:
-            p, q = deq.popleft()
-            if not check(p, q):
+        # Initialize queue with root pair
+        queue = deque([(p, q)])
+
+        while queue:
+            node1, node2 = queue.popleft()
+
+            # Check current pair of nodes
+            if not check(node1, node2):
                 return False
 
-            if p:
-                deq.append((p.left, q.left))
-                deq.append((p.right, q.right))
+            # If nodes are valid, add their children to queue
+            if node1:  # (and thus node2 as well due to check function)
+                queue.append((node1.left, node2.left))
+                queue.append((node1.right, node2.right))
 
         return True
+
+
+class Solution2:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Recursive DFS (pre-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n)
+            - Worst: O(n) for skewed tree
+        """
+        # Base cases
+        if not p and not q:
+            return True
+        if not p or not q:
+            return False
+        if p.val != q.val:
+            return False
+        
+        # Recursive checks (pre-order: root, left, right)
+        return (self.isSameTree(p.left, q.left) and 
+                self.isSameTree(p.right, q.right))
