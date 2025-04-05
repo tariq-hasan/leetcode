@@ -138,6 +138,22 @@
 7. [Medium: 1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)
 8. [Medium: 2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/description/)
 
+## Trees
+
+### Basics
+
+1. [Easy: 100. Same Tree](https://leetcode.com/problems/same-tree/description/)
+2. [Easy: 101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)
+3. [Easy: 104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+4. [Easy: 110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)
+5. [Easy: 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)
+6. [Easy: 226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)
+7. [Easy: 257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)
+8. [Easy: 543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
+9. [Easy: 572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)
+10. [Easy: 637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/)
+11. [Easy: 872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
+
 ## Graphs
 
 ### Topological Sort
