@@ -100,3 +100,29 @@ class Solution3:
             stack.append((node1.left, node2.left))
             
         return True
+
+
+class Solution4:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Recursive DFS (in-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n) 
+            - Worst: O(n) for skewed tree
+        """
+        # Helper function for in-order traversal
+        def inorder(node1, node2):
+            # Base cases
+            if not node1 and not node2:
+                return True
+            if not node1 or not node2:
+                return False
+            
+            # In-order: left, root, right
+            return (inorder(node1.left, node2.left) and
+                   node1.val == node2.val and
+                   inorder(node1.right, node2.right))
+            
+        return inorder(p, q)
