@@ -36,6 +36,37 @@ class Solution:
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
+        Strategy: Iterative DFS (pre-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n)
+            - Worst: O(n) for skewed tree
+        """
+        # Initialize stack with root pair
+        stack = [(p, q)]
+
+        while stack:
+            node1, node2 = stack.pop()
+
+            # Both nodes are None, continue checking other nodes
+            if not node1 and not node2:
+                continue
+
+            # One node is None or values don't match
+            if not node1 or not node2 or node1.val != node2.val:
+                return False
+
+            # Pre-order: Push right then left (so left is processed first)
+            stack.append((node1.right, node2.right))
+            stack.append((node1.left, node2.left))
+
+        return True
+
+
+class Solution:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
         Strategy: Iterative BFS
         Time Complexity: O(n)
         Space Complexity:
@@ -67,36 +98,5 @@ class Solution:
             if node1:  # (and thus node2 as well due to check function)
                 queue.append((node1.left, node2.left))
                 queue.append((node1.right, node2.right))
-
-        return True
-
-
-class Solution:
-    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        """
-        Strategy: Iterative DFS (pre-order)
-        Time Complexity: O(n)
-        Space Complexity:
-            - Best: O(log n) for balanced tree
-            - Average: O(log n)
-            - Worst: O(n) for skewed tree
-        """
-        # Initialize stack with root pair
-        stack = [(p, q)]
-
-        while stack:
-            node1, node2 = stack.pop()
-
-            # Both nodes are None, continue checking other nodes
-            if not node1 and not node2:
-                continue
-
-            # One node is None or values don't match
-            if not node1 or not node2 or node1.val != node2.val:
-                return False
-
-            # Pre-order: Push right then left (so left is processed first)
-            stack.append((node1.right, node2.right))
-            stack.append((node1.left, node2.left))
 
         return True
