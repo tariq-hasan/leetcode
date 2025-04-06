@@ -67,3 +67,43 @@ class Solution:
             stack.append((left.right, right.left))
 
         return True
+
+
+class Solution:
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Iterative BFS
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(1) if tree is null or root-only
+            - Average: O(w) where w = max width of the tree
+            - Worst: O(n) if all nodes are at one level
+        """
+        # Helper function to check if two nodes are mirrors
+        def check(left: TreeNode, right: TreeNode) -> bool:
+            if not left and not right:
+                return True
+            if not left or not right:
+                return False
+            if left.val != right.val:
+                return False
+            return True
+
+        # Initialize queue with the left and right subtrees as a pair
+        queue = deque([(root.left, root.right)])
+
+        while queue:
+            left, right = queue.popleft()
+
+            # Check current pair of nodes
+            if not check(left, right):
+                return False
+
+            # If nodes are valid, add their children to queue
+            if left and right:  # Both nodes exist due to check function
+                # Add outer pair (left.left, right.right)
+                queue.append((left.left, right.right))
+                # Add inner pair (left.right, right.left)
+                queue.append((left.right, right.left))
+
+        return True
