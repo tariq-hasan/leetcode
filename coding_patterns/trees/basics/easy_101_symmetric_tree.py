@@ -36,3 +36,34 @@ class Solution:
                     isMirror(left.right, right.left))
 
         return isMirror(root.left, root.right)
+
+
+class Solution:
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        """
+        Strategy: Iterative DFS (pre-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n)
+            - Worst: O(n) for skewed tree
+        """
+        # Initialize stack with the left and right subtrees as a pair
+        stack = [(root.left, root.right)]
+
+        while stack:
+            left, right = stack.pop()
+
+            # Both nodes are None, continue checking other nodes
+            if not left and not right:
+                continue
+
+            # One node is None or values don't match
+            if not left or not right or left.val != right.val:
+                return False
+
+            # Push the pairs to compare (outer and inner subtrees)
+            stack.append((left.left, right.right))
+            stack.append((left.right, right.left))
+
+        return True
