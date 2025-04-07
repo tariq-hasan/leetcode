@@ -28,3 +28,34 @@ class Solution:
         left_height = self.maxDepth(root.left)
         right_height = self.maxDepth(root.right)
         return max(left_height, right_height) + 1
+
+
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        """
+        Strategy: Iterative DFS (pre-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n)
+            - Worst: O(n) for skewed tree
+        """
+        # Base case
+        if root is None:
+            return 0
+
+        max_depth = 0
+        stack = [(root, 1)]  # (node, depth) pairs
+        
+        while stack:
+            node, depth = stack.pop()
+            
+            if node:
+                # Update max depth if current depth is greater
+                max_depth = max(depth, max_depth)
+                
+                # Pre-order: Push right then left (so left is processed first when popped)
+                stack.append((node.right, depth + 1))
+                stack.append((node.left, depth + 1))
+
+        return max_depth
