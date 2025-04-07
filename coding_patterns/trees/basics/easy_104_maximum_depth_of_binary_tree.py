@@ -1,3 +1,4 @@
+from collections import deque
 from typing import Optional
 
 
@@ -12,12 +13,18 @@ class TreeNode:
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         """
-        The time complexity is O(n).
-        The space complexity is O(n).
+        Strategy: Recursive DFS (post-order)
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(log n) for balanced tree
+            - Average: O(log n)
+            - Worst: O(n) for skewed tree
         """
+        # Base case
         if root is None:
             return 0
-        else:
-            left_height = self.maxDepth(root.left)
-            right_height = self.maxDepth(root.right)
-            return max(left_height, right_height) + 1
+
+        # Recursive case: max depth is max of left and right subtrees + 1 for current node
+        left_height = self.maxDepth(root.left)
+        right_height = self.maxDepth(root.right)
+        return max(left_height, right_height) + 1
