@@ -344,38 +344,61 @@
 
 ## Backtracking
 
-1. [Medium: 46. Permutations](https://leetcode.com/problems/permutations/description/)
-2. [Medium: 47. Permutations II](https://leetcode.com/problems/permutations-ii/description/)
-3. [Medium: 31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
-4. [Medium: 78. Subsets](https://leetcode.com/problems/subsets/description/)
-5. [Medium: 90. Subsets II](https://leetcode.com/problems/subsets-ii/description/)
-6. [Medium: 39. Combination Sum](https://leetcode.com/problems/combination-sum/description/)
-7. [Medium: 40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)
-8. [Medium: 216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)
-9. [Medium: 131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/)
-10. [Hard: 132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/description/)
-11. [Hard: 51. N-Queens](https://leetcode.com/problems/n-queens/description/)
-12. [Hard: 52. N-Queens II](https://leetcode.com/problems/n-queens-ii/description/)
-13. [Medium: 17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
-14. [Medium: 22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
-15. [Medium: 77. Combinations](https://leetcode.com/problems/combinations/description/)
-16. [Medium: 79. Word Search](https://leetcode.com/problems/word-search/description/)
-17. [Medium: 93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/)
-18. [Medium: 241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/)
-19. [Medium: 320. Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/description/)
-20. [Medium: 473. Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/description/)
-21. [Medium: 490. The Maze](https://leetcode.com/problems/the-maze/description/)
-22. [Medium: 494. Target Sum](https://leetcode.com/problems/target-sum/description/)
-23. [Medium: 526. Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/description/)
-24. [Medium: 638. Shopping Offers](https://leetcode.com/problems/shopping-offers/description/)
-25. [Medium: 784. Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/description/)
-26. [Medium: 797. All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
-27. [Medium: 1219. Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/description/)
-28. [Hard: 37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
-29. [Hard: 282. Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/)
-30. [Hard: 301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/description/)
-31. [Hard: 425. Word Squares](https://leetcode.com/problems/word-squares/description/)
-32. [Hard: 489. Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/description/)
+### Subset and Combination Patterns
+
+1. [Medium: 17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
+2. [Medium: 39. Combination Sum](https://leetcode.com/problems/combination-sum/description/)
+3. [Medium: 40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)
+4. [Medium: 77. Combinations](https://leetcode.com/problems/combinations/description/)
+5. [Medium: 78. Subsets](https://leetcode.com/problems/subsets/description/)
+6. [Medium: 90. Subsets II](https://leetcode.com/problems/subsets-ii/description/)
+7. [Medium: 93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/)
+8. [Medium: 131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/)
+9. [Medium: 216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)
+10. [Medium: 254. Factor Combinations](https://leetcode.com/problems/factor-combinations/description/)
+
+### Permutation Patterns
+
+1. [Medium: 31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
+2. [Medium: 46. Permutations](https://leetcode.com/problems/permutations/description/)
+3. [Medium: 47. Permutations II](https://leetcode.com/problems/permutations-ii/description/)
+4. [Medium: 267. Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/description/)
+5. [Medium: 320. Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/description/)
+6. [Medium: 526. Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/description/)
+7. [Medium: 784. Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/description/)
+8. [Hard: 425. Word Squares](https://leetcode.com/problems/word-squares/description/)
+
+### Constraint Satisfaction / Target Building
+
+1. [Medium: 22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
+2. [Medium: 241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/)
+3. [Hard: 37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
+4. [Hard: 44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/)
+5. [Hard: 282. Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/)
+6. [Hard: 301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/description/)
+
+### Pathfinding
+
+1. [Medium: 79. Word Search](https://leetcode.com/problems/word-search/description/)
+2. [Medium: 797. All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
+3. [Medium: 1219. Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/description/)
+4. [Medium: 490. The Maze](https://leetcode.com/problems/the-maze/description/)
+5. [Hard: 489. Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/description/)
+6. [Hard: 980. Unique Paths III](https://leetcode.com/problems/unique-paths-iii/description/)
+
+### Board Configuration
+
+1. [Hard: 51. N-Queens](https://leetcode.com/problems/n-queens/description/)
+2. [Hard: 52. N-Queens II](https://leetcode.com/problems/n-queens-ii/description/)
+
+### Optimization / Packing
+
+1. [Medium: 473. Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/description/)
+2. [Medium: 638. Shopping Offers](https://leetcode.com/problems/shopping-offers/description/)
+
+### String Construction / Variants
+
+1. [Hard: 132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/description/)
 
 ## Dynamic Programming
 
