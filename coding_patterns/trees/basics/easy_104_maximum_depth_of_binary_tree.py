@@ -59,3 +59,34 @@ class Solution:
                 stack.append((node.left, depth + 1))
 
         return max_depth
+
+
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        """
+        Strategy: Iterative BFS
+        Time Complexity: O(n)
+        Space Complexity:
+            - Best: O(1) if tree is null or root-only
+            - Average: O(w) where w = max width of the tree
+            - Worst: O(n/2) ≈ O(n) if tree is perfect and last level has n/2 nodes
+        """
+        # Base case
+        if root is None:
+            return 0
+
+        max_depth = 0
+        queue = deque([(root, 1)])  # (node, depth) pairs
+        
+        while queue:
+            node, depth = queue.popleft()
+            
+            if node:
+                # Update max depth if current depth is greater
+                max_depth = max(depth, max_depth)
+                
+                # Add children to the queue
+                queue.append((node.left, depth + 1))
+                queue.append((node.right, depth + 1))
+
+        return max_depth
