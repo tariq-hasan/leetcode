@@ -4,8 +4,8 @@ class Solution:
         The time complexity is O(n).
         The space complexity is O(1).
         """
-        if n == 0:
-            return 0
+        if n < 2:
+            return n
 
         i, j = 0, 1
         for _ in range(n - 1):
