@@ -8,6 +8,6 @@ class Solution:
         The space complexity is O(1).
         """
         i = j = 0
-        for k in range(1, len(cost)):
-            i, j = j, min(i + cost[k - 1], j + cost[k])
+        for k in range(2, len(cost) + 1):
+            i, j = j, min(i + cost[k - 2], j + cost[k - 1])
         return j
