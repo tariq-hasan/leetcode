@@ -13,12 +13,12 @@ class TreeNode:
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
-        Strategy: Recursive DFS (pre-order)
-        Time Complexity: O(n)
+        Check if two binary trees are the same using recursive DFS (pre-order).
+
+        Time Complexity: O(n) - we visit each node once
         Space Complexity:
-            - Best: O(log n) for balanced tree
-            - Average: O(log n)
-            - Worst: O(n) for skewed tree
+            - O(log n) for balanced trees (height of the tree)
+            - O(n) worst case for skewed trees
         """
         # Base cases
         if not p and not q:
@@ -36,12 +36,12 @@ class Solution:
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
-        Strategy: Iterative DFS (pre-order)
-        Time Complexity: O(n)
-        Space Complexity:
-            - Best: O(log n) for balanced tree
-            - Average: O(log n)
-            - Worst: O(n) for skewed tree
+        Check if two binary trees are the same using iterative DFS (pre-order).
+
+        Time Complexity: O(n) - we visit each node once
+        Space Complexity: 
+            - O(log n) for balanced trees
+            - O(n) worst case for skewed trees
         """
         # Initialize stack with root pair
         stack = [(p, q)]
@@ -49,11 +49,9 @@ class Solution:
         while stack:
             node1, node2 = stack.pop()
 
-            # Both nodes are None, continue checking other nodes
+            # Check current pair of nodes
             if not node1 and not node2:
                 continue
-
-            # One node is None or values don't match
             if not node1 or not node2 or node1.val != node2.val:
                 return False
 
@@ -67,23 +65,13 @@ class Solution:
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
-        Strategy: Iterative BFS
-        Time Complexity: O(n)
-        Space Complexity:
-            - Best: O(1) if both trees are null or root-only
-            - Average: O(w) where w = max width of the tree
-            - Worst: O(n) if all nodes are at one level
-        """
-        # Helper function to compare two nodes
-        def check(node1: TreeNode, node2: TreeNode) -> bool:
-            if not node1 and not node2:
-                return True
-            if not node1 or not node2:
-                return False
-            if node1.val != node2.val:
-                return False
-            return True
+        Check if two binary trees are the same using BFS.
 
+        Time Complexity: O(n) - we visit each node once
+        Space Complexity:
+            - O(w) where w is the maximum width of the tree
+            - O(n/2) ≈ O(n) worst case for a perfect tree's bottom level
+        """
         # Initialize queue with root pair
         queue = deque([(p, q)])
 
@@ -91,12 +79,13 @@ class Solution:
             node1, node2 = queue.popleft()
 
             # Check current pair of nodes
-            if not check(node1, node2):
+            if not node1 and not node2:
+                continue
+            if not node1 or not node2 or node1.val != node2.val:
                 return False
 
-            # If nodes are valid, add their children to queue
-            if node1:  # (and thus node2 as well due to check function)
-                queue.append((node1.left, node2.left))
-                queue.append((node1.right, node2.right))
+            # Add children to queue
+            queue.append((node1.left, node2.left))
+            queue.append((node1.right, node2.right))
 
         return True
