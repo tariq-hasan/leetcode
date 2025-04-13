@@ -33,7 +33,7 @@ class Solution:
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         """
-        Find the maximum depth of a binary tree using iterative DFS.
+        Find the maximum depth of a binary tree using iterative DFS (pre-order).
 
         Time Complexity: O(n) - we visit each node once
         Space Complexity:
