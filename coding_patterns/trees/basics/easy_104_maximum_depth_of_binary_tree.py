@@ -46,14 +46,14 @@ class Solution:
 
         max_depth = 0
         stack = [(root, 1)]  # (node, depth) pairs
-        
+
         while stack:
             node, depth = stack.pop()
-            
+
             if node:
                 # Update max depth if current depth is greater
                 max_depth = max(depth, max_depth)
-                
+
                 # Pre-order: Push right then left (so left is processed first when popped)
                 stack.append((node.right, depth + 1))
                 stack.append((node.left, depth + 1))
@@ -77,14 +77,14 @@ class Solution:
 
         max_depth = 0
         queue = deque([(root, 1)])  # (node, depth) pairs
-        
+
         while queue:
             node, depth = queue.popleft()
-            
+
             if node:
                 # Update max depth if current depth is greater
                 max_depth = max(depth, max_depth)
-                
+
                 # Add children to the queue
                 queue.append((node.left, depth + 1))
                 queue.append((node.right, depth + 1))
