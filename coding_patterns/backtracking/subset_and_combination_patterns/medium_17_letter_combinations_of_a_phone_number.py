@@ -4,15 +4,16 @@ from typing import List
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         """
-        The time complexity is O(n * 4^n), where 4 is the maximum value length in letters.
-        The space complexity is O(n).
+        Time Complexity: O(4^n), where n is the length of digits
+                         Each digit maps to 3-4 letters, worst case is 4 options per digit
+        Space Complexity: O(n), for the recursion stack
         """
-        # If the input is empty, immediately return an empty answer array
-        if len(digits) == 0:
+        # Edge case: empty input
+        if not digits:
             return []
 
-        # Map all the digits to their corresponding letters
-        letters = {
+        # Digit to letter mapping
+        phone_map = {
             "2": "abc",
             "3": "def",
             "4": "ghi",
@@ -20,26 +21,22 @@ class Solution:
             "6": "mno",
             "7": "pqrs",
             "8": "tuv",
-            "9": "wxyz",
+            "9": "wxyz"
         }
 
-        def backtrack(index, path):
-            # If the path is the same length as digits, we have a complete combination
-            if len(path) == len(digits):
-                combinations.append("".join(path))
-                return  # Backtrack
+        result = []
 
-            # Get the letters that the current digit maps to, and loop through them
-            possible_letters = letters[digits[index]]
-            for letter in possible_letters:
-                # Add the letter to our current path
-                path.append(letter)
-                # Move on to the next digit
-                backtrack(index + 1, path)
-                # Backtrack by removing the letter before moving onto the next
-                path.pop()
+        def backtrack(index: int, current_str: str) -> None:
+            # Base case: we've processed all digits
+            if index == len(digits):
+                result.append(current_str)
+                return
 
-        # Initiate backtracking with an empty path and starting index of 0
-        combinations = []
-        backtrack(0, [])
-        return combinations
+            # Try each letter for the current digit
+            for letter in phone_map[digits[index]]:
+                # Add current letter and move to next digit
+                backtrack(index + 1, current_str + letter)
+
+        # Start backtracking from the first digit with empty string
+        backtrack(0, "")
+        return result
