@@ -66,3 +66,36 @@ class Solution:
                 stack.append(node.left)
 
         return root
+
+
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        """
+        Invert a binary tree using BFS (level-order traversal).
+
+        Time Complexity: O(n) - we visit each node once
+        Space Complexity:
+            - O(w) where w is the maximum width of the tree
+            - O(n/2) ≈ O(n) worst case for a perfect tree's bottom level
+        """
+        # Base case
+        if not root:
+            return None
+
+        # Queue for BFS
+        queue = deque([root])
+
+        while queue:
+            # Process a node from the queue
+            node = queue.popleft()
+
+            # Swap its children
+            node.left, node.right = node.right, node.left
+
+            # Add non-null children to the queue
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+        return root
