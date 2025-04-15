@@ -75,3 +75,39 @@ class Solution:
                 stack.append((node.left, depth + 1))
 
         return min_depth
+
+
+class Solution:
+    def minDepth(self, root: Optional[TreeNode]) -> int:
+        """
+        Find the minimum depth of a binary tree using BFS (level-order traversal).
+        This is often the most efficient approach for finding minimum depth.
+
+        Time Complexity: O(n) in worst case, but often better as we can terminate early
+        Space Complexity:
+            - O(w) where w is the maximum width of the tree
+            - O(n/2) ≈ O(n) worst case for a perfect tree's bottom level
+        """
+        # Base case
+        if not root:
+            return 0
+
+        # Queue for BFS, storing (node, depth) pairs
+        queue = deque([(root, 1)])
+
+        while queue:
+            node, depth = queue.popleft()
+
+            # If we found a leaf node, we can return immediately
+            # This is the key advantage of BFS for this problem
+            if not node.left and not node.right:
+                return depth
+
+            # Add children to queue
+            if node.left:
+                queue.append((node.left, depth + 1))
+            if node.right:
+                queue.append((node.right, depth + 1))
+
+        # This line shouldn't be reached if the tree has at least one node
+        return 0
