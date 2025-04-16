@@ -75,3 +75,36 @@ class Solution:
                 stack.append((node.right, path + "->" + str(node.right.val)))
 
         return result
+
+
+class Solution:
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        """
+        Find all root-to-leaf paths in a binary tree using BFS.
+
+        Time Complexity: O(n) - we visit each node once
+        Space Complexity:
+            - O(w) where w is the maximum width of the tree
+            - O(n) in worst case
+        """
+        if not root:
+            return []
+
+        result = []
+        # Queue for BFS, storing (node, path) pairs
+        queue = deque([(root, str(root.val))])
+
+        while queue:
+            node, path = queue.popleft()
+
+            # If leaf node, add path to result
+            if not node.left and not node.right:
+                result.append(path)
+
+            # Add children to queue with updated paths
+            if node.left:
+                queue.append((node.left, path + "->" + str(node.left.val)))
+            if node.right:
+                queue.append((node.right, path + "->" + str(node.right.val)))
+
+        return result
