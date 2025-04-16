@@ -1,3 +1,4 @@
+from collections import deque
 from typing import List, Optional
 
 
@@ -39,4 +40,38 @@ class Solution:
             dfs(node.right, current_path)
 
         dfs(root, "")
+        return result
+
+
+class Solution:
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        """
+        Find all root-to-leaf paths in a binary tree using iterative DFS.
+
+        Time Complexity: O(n) - we visit each node once
+        Space Complexity:
+            - O(h) for the stack where h is the height of the tree
+            - O(n) for the paths stored
+        """
+        if not root:
+            return []
+
+        result = []
+        # Stack stores (node, path) pairs
+        stack = [(root, str(root.val))]
+
+        while stack:
+            node, path = stack.pop()
+
+            # If leaf node, add path to result
+            if not node.left and not node.right:
+                result.append(path)
+
+            # Push children with updated paths
+            # We push left first so that right is processed first (LIFO)
+            if node.left:
+                stack.append((node.left, path + "->" + str(node.left.val)))
+            if node.right:
+                stack.append((node.right, path + "->" + str(node.right.val)))
+
         return result
