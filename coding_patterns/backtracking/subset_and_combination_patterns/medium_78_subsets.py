@@ -29,3 +29,37 @@ class Solution:
             result.extend(new_subsets)
 
         return result
+
+
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        """
+        Generate all possible subsets of the given array using backtracking.
+
+        We build subsets incrementally, considering each number for inclusion or exclusion.
+
+        Time Complexity: O(n * 2^n)
+            - We generate 2^n subsets, and each subset can have up to n elements
+        Space Complexity: O(n)
+            - O(n) for the recursion stack and current path
+            - The result space is not counted in space complexity analysis
+        """
+        result = []
+
+        def backtrack(start_idx: int, path: List[int]) -> None:
+            # Add the current path as a valid subset
+            # (All paths, including empty ones, are valid subsets)
+            result.append(path[:])
+
+            # Try adding each remaining number to our current subset
+            for i in range(start_idx, len(nums)):
+                # Include the current number
+                path.append(nums[i])
+                # Recursively build subsets with remaining numbers
+                backtrack(i + 1, path)
+                # Backtrack by removing the current number
+                path.pop()
+
+        # Start backtracking from index 0 with an empty path
+        backtrack(0, [])
+        return result
