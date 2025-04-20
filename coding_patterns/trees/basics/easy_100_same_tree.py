@@ -39,7 +39,7 @@ class Solution:
         Check if two binary trees are the same using iterative DFS (pre-order).
 
         Time Complexity: O(n) - we visit each node once
-        Space Complexity: 
+        Space Complexity:
             - O(log n) for balanced trees
             - O(n) worst case for skewed trees
         """
