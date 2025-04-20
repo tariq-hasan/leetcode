@@ -43,15 +43,15 @@ class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         """
         Check if a binary tree is symmetric using iterative DFS.
-        
+
         Time Complexity: O(n) - we visit each node once
-        Space Complexity: 
+        Space Complexity:
             - O(log n) for balanced trees
             - O(n) worst case for skewed trees
         """
         if not root:
             return True
-            
+
         # Initialize stack with the left and right subtrees as a pair
         stack = [(root.left, root.right)]
 
