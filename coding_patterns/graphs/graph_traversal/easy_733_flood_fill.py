@@ -76,3 +76,41 @@ class Solution:
                         stack.append((nr, nc))
 
         return image
+
+
+class Solution:
+    def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+        """
+        BFS (Breadth-First Search)
+
+        Time Complexity: O(N), where N is the number of pixels in the image.
+        We process each pixel at most once.
+
+        Space Complexity: O(N) for the queue in worst case.
+        The queue size depends on the breadth of the connected area with the original color.
+        """
+        rows, cols = len(image), len(image[0])
+        original_color = image[sr][sc]
+
+        # Early return if starting pixel is already the target color
+        if original_color == color:
+            return image
+
+        queue = deque([(sr, sc)])
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # Down, Up, Right, Left
+
+        while queue:
+            r, c = queue.popleft()
+
+            # Only process uncolored pixels with the original color
+            if image[r][c] == original_color:
+                image[r][c] = color
+
+                # Add valid neighbors to queue
+                for dr, dc in directions:
+                    nr, nc = r + dr, c + dc
+                    if (0 <= nr < rows and 0 <= nc < cols and
+                        image[nr][nc] == original_color):
+                        queue.append((nr, nc))
+
+        return image
