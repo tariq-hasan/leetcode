@@ -64,16 +64,15 @@ class Solution:
         while stack:
             r, c = stack.pop()
 
-            # Only process uncolored pixels with the original color
-            if image[r][c] == original_color:
-                image[r][c] = color
+            # Process uncolored pixels with the original color
+            image[r][c] = color
 
-                # Add valid neighbors to stack
-                for dr, dc in directions:
-                    nr, nc = r + dr, c + dc
-                    if (0 <= nr < rows and 0 <= nc < cols and
-                        image[nr][nc] == original_color):
-                        stack.append((nr, nc))
+            # Add valid neighbors to stack
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                if (0 <= nr < rows and 0 <= nc < cols and
+                    image[nr][nc] == original_color):
+                    stack.append((nr, nc))
 
         return image
 
@@ -102,15 +101,14 @@ class Solution:
         while queue:
             r, c = queue.popleft()
 
-            # Only process uncolored pixels with the original color
-            if image[r][c] == original_color:
-                image[r][c] = color
+            # Process uncolored pixels with the original color
+            image[r][c] = color
 
-                # Add valid neighbors to queue
-                for dr, dc in directions:
-                    nr, nc = r + dr, c + dc
-                    if (0 <= nr < rows and 0 <= nc < cols and
-                        image[nr][nc] == original_color):
-                        queue.append((nr, nc))
+            # Add valid neighbors to queue
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                if (0 <= nr < rows and 0 <= nc < cols and
+                    image[nr][nc] == original_color):
+                    queue.append((nr, nc))
 
         return image
