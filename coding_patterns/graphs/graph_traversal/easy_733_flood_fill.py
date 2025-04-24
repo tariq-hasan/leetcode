@@ -39,13 +39,10 @@ class Solution:
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
         """
-        DFS - Iterative (Using Stack)
+        Iterative DFS Solution for Flood Fill
 
-        Time Complexity: O(N), where N is the number of pixels in the image.
-        We process each pixel at most once.
-
-        Space Complexity: O(N) for the stack in worst case.
-        The stack might need to store many pixel coordinates in a large connected area.
+        Time Complexity: O(N) where N is the number of pixels in the image
+        Space Complexity: O(N) for the stack in worst case
         """
         rows, cols = len(image), len(image[0])
         original_color = image[sr][sc]
@@ -60,14 +57,17 @@ class Solution:
         while stack:
             r, c = stack.pop()
 
-            # Process uncolored pixels with the original color
+            # Skip if already processed or not matching original color
+            if image[r][c] != original_color:
+                continue
+
+            # Fill current pixel
             image[r][c] = color
 
             # Add valid neighbors to stack
             for dr, dc in directions:
                 nr, nc = r + dr, c + dc
-                if (0 <= nr < rows and 0 <= nc < cols and
-                    image[nr][nc] == original_color):
+                if 0 <= nr < rows and 0 <= nc < cols and image[nr][nc] == original_color:
                     stack.append((nr, nc))
 
         return image
