@@ -45,3 +45,54 @@ class Solution:
                     board[r][c] = 'X'      # Surrounded, flip
                 elif board[r][c] == 'T':
                     board[r][c] = 'O'      # Unsurrounded, restore
+
+
+class Solution:
+    def solve(self, board: List[List[str]]) -> None:
+        """
+        Iterative DFS Solution for Surrounded Regions
+
+        Time Complexity: O(M*N) where M is number of rows and N is number of columns
+        Space Complexity: O(M*N) for the stack in worst case
+        """
+        if not board or not board[0]:
+            return
+
+        rows, cols = len(board), len(board[0])
+        stack = []
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # Down, Up, Right, Left
+
+        # Add border 'O's to stack and mark immediately
+        for r in range(rows):
+            if board[r][0] == 'O':
+                stack.append((r, 0))
+                board[r][0] = 'T'
+            if board[r][cols-1] == 'O':
+                stack.append((r, cols-1))
+                board[r][cols-1] = 'T'
+
+        for c in range(cols):
+            if board[0][c] == 'O':
+                stack.append((0, c))
+                board[0][c] = 'T'
+            if board[rows-1][c] == 'O':
+                stack.append((rows-1, c))
+                board[rows-1][c] = 'T'
+
+        # Process stack - mark all connected 'O's
+        while stack:
+            r, c = stack.pop()
+
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                if 0 <= nr < rows and 0 <= nc < cols and board[nr][nc] == 'O':
+                    board[nr][nc] = 'T'    # Mark as safe
+                    stack.append((nr, nc))
+
+        # Flip remaining 'O's to 'X' and restore 'T's to 'O'
+        for r in range(rows):
+            for c in range(cols):
+                if board[r][c] == 'O':
+                    board[r][c] = 'X'      # Surrounded, flip
+                elif board[r][c] == 'T':
+                    board[r][c] = 'O'      # Unsurrounded, restore
