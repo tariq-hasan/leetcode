@@ -10,9 +10,6 @@ class Solution:
         Time Complexity: O(M*N) where M is number of rows and N is number of columns
         Space Complexity: O(M*N) for the recursion stack in worst case
         """
-        if not board or not board[0]:
-            return
-
         rows, cols = len(board), len(board[0])
 
         def dfs(r: int, c: int) -> None:
