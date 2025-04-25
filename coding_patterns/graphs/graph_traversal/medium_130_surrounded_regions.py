@@ -96,3 +96,51 @@ class Solution:
                     board[r][c] = 'X'      # Surrounded, flip
                 elif board[r][c] == 'T':
                     board[r][c] = 'O'      # Unsurrounded, restore
+
+
+class Solution:
+    def solve(self, board: List[List[str]]) -> None:
+        """
+        Iterative BFS Solution for Surrounded Regions
+
+        Time Complexity: O(M*N) where M is number of rows and N is number of columns
+        Space Complexity: O(min(M, N)) - at most the border cells in queue
+        """
+        rows, cols = len(board), len(board[0])
+        queue = deque()
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # Down, Up, Right, Left
+
+        # Add border 'O's to queue and mark immediately
+        for r in range(rows):
+            if board[r][0] == 'O':
+                queue.append((r, 0))
+                board[r][0] = 'T'
+            if board[r][cols-1] == 'O':
+                queue.append((r, cols-1))
+                board[r][cols-1] = 'T'
+
+        for c in range(cols):
+            if board[0][c] == 'O':
+                queue.append((0, c))
+                board[0][c] = 'T'
+            if board[rows-1][c] == 'O':
+                queue.append((rows-1, c))
+                board[rows-1][c] = 'T'
+
+        # Process queue - mark all connected 'O's
+        while queue:
+            r, c = queue.popleft()
+
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                if 0 <= nr < rows and 0 <= nc < cols and board[nr][nc] == 'O':
+                    board[nr][nc] = 'T'    # Mark as safe
+                    queue.append((nr, nc))
+
+        # Flip remaining 'O's to 'X' and restore 'T's to 'O'
+        for r in range(rows):
+            for c in range(cols):
+                if board[r][c] == 'O':
+                    board[r][c] = 'X'      # Surrounded, flip
+                elif board[r][c] == 'T':
+                    board[r][c] = 'O'      # Unsurrounded, restore
