@@ -1,3 +1,4 @@
+from collections import deque
 from typing import List
 
 
@@ -66,5 +67,39 @@ class Solution:
                             if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == '1':
                                 stack.append((nr, nc))
                                 grid[nr][nc] = '0'  # Mark as visited when adding to stack
+
+        return islands
+
+
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        """
+        Iterative BFS Solution for Number of Islands
+
+        Time Complexity: O(M*N) where M is number of rows and N is number of columns
+        Space Complexity: O(min(M,N)) - at most size of the largest island in queue
+        """
+        rows, cols = len(grid), len(grid[0])
+        islands = 0
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # Down, Up, Right, Left
+
+        for r in range(rows):
+            for c in range(cols):
+                if grid[r][c] == '1':
+                    islands += 1  # Found a new island
+
+                    # Start BFS from this land cell
+                    queue = deque([(r, c)])
+                    grid[r][c] = '0'  # Mark as visited immediately
+
+                    while queue:
+                        cur_r, cur_c = queue.popleft()
+
+                        # Check all adjacent cells
+                        for dr, dc in directions:
+                            nr, nc = cur_r + dr, cur_c + dc
+                            if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == '1':
+                                queue.append((nr, nc))
+                                grid[nr][nc] = '0'  # Mark as visited when adding to queue
 
         return islands
