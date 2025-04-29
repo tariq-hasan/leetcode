@@ -79,3 +79,36 @@ class Solution:
                         if distance + 1 < rooms[nr][nc]:
                             stack.append((nr, nc, distance + 1))
                             visited.add((nr, nc))
+
+
+class Solution:
+    def wallsAndGates(self, rooms: List[List[int]]) -> None:
+        """
+        Iterative BFS Solution for Walls and Gates
+
+        Time Complexity: O(m*n) where m is number of rows and n is number of columns
+        Space Complexity: O(m*n) for the queue in worst case
+        """
+        rows, cols = len(rooms), len(rooms[0])
+        INF = 2147483647  # Value representing empty room
+
+        queue = deque()
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]  # Down, Up, Right, Left
+
+        # Add all gates to the queue with distance 0
+        for r in range(rows):
+            for c in range(cols):
+                if rooms[r][c] == 0:  # Found a gate
+                    queue.append((r, c, 0))  # (row, col, distance)
+
+        # BFS
+        while queue:
+            r, c, distance = queue.popleft()
+
+            # Check all four directions
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                # Only process if it's an unexplored empty room
+                if (0 <= nr < rows and 0 <= nc < cols and rooms[nr][nc] == INF):
+                    rooms[nr][nc] = distance + 1
+                    queue.append((nr, nc, distance + 1))
