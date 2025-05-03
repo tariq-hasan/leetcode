@@ -6,8 +6,7 @@ class Solution:
         """
         Generate Pascal's Triangle up to the specified number of rows.
 
-        Pascal's Triangle is a triangular array where each number is the sum
-        of the two numbers directly above it.
+        In Pascal's Triangle, each number is the sum of the two numbers directly above it.
 
         Args:
             numRows: The number of rows to generate
@@ -16,7 +15,7 @@ class Solution:
             A list of lists representing Pascal's Triangle
 
         Time Complexity: O(numRows²) - We process each element in the triangle once
-        Space Complexity: O(1) - We are not using additional data structures beyond the required output.
+        Space Complexity: O(numRows²) - We store all elements in the triangle
         """
         # Initialize the result list
         triangle = []
