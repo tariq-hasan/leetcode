@@ -4,11 +4,16 @@ from typing import List
 class Solution:
     def getRow(self, rowIndex: int) -> List[int]:
         """
-        The time complexity is O(n^2).
-        The space complexity is O(1).
+        Returns the rowIndex-th row of Pascal's Triangle.
+
+        Time Complexity: O(rowIndex²) - We compute each element once
+        Space Complexity: O(rowIndex) - We only store one row at a time
         """
-        out = [1] * (rowIndex + 1)
-        for i in range(rowIndex - 1):
-            for j in range(i, -1, -1):
-                out[j + 1] = out[j] + out[j + 1]
-        return out
+        row = [1] * (rowIndex + 1)
+
+        for i in range(1, rowIndex + 1):
+            # Update from right to left to avoid overwriting values needed later
+            for j in range(i - 1, 0, -1):
+                row[j] = row[j] + row[j - 1]
+
+        return row
