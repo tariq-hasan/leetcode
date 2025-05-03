@@ -6,6 +6,14 @@ class Solution:
         """
         Returns the rowIndex-th row of Pascal's Triangle.
 
+        In Pascal's Triangle, each number is the sum of the two numbers directly above it.
+
+        Args:
+            rowIndex: The zero-indexed row to return
+
+        Returns:
+            A list representing the requested row of Pascal's Triangle
+
         Time Complexity: O(rowIndex²) - We compute each element once
         Space Complexity: O(rowIndex) - We only store one row at a time
         """
