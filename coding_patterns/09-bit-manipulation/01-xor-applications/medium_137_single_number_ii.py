@@ -47,13 +47,36 @@ class Solution:
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         """
-        The time complexity is O(n).
-        The space complexity is O(1).
+        Find the single element that appears only once in an array where all other elements appear three times.
+
+        This solution uses a digital logic approach with two state variables:
+        - seen_once: tracks bits that have appeared once (mod 3)
+        - seen_twice: tracks bits that have appeared twice (mod 3)
+
+        The state transitions follow these rules:
+        - When a bit appears for the first time, it's recorded in seen_once
+        - When a bit appears for the second time, it's moved from seen_once to seen_twice
+        - When a bit appears for the third time, it's removed from both seen_once and seen_twice
+
+        Args:
+            nums: A list of integers where every element appears three times except for one
+
+        Returns:
+            The element that appears only once
+
+        Time Complexity: O(n) - We iterate through the array once
+        Space Complexity: O(1) - We use only two variables regardless of input size
         """
+        # Initialize state variables
         seen_once = seen_twice = 0
 
+        # Process each number
         for num in nums:
+            # Update seen_once: Keep a bit if it appears for the first time (and not in seen_twice)
             seen_once = (seen_once ^ num) & (~seen_twice)
+
+            # Update seen_twice: Keep a bit if it appears for the second time (and not in seen_once)
             seen_twice = (seen_twice ^ num) & (~seen_once)
 
+        # The bits that appeared exactly once will be in seen_once
         return seen_once
