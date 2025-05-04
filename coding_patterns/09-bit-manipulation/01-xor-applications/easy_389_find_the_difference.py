@@ -39,10 +39,31 @@ class Solution:
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         """
-        The time complexity is O(n).
-        The space complexity is O(1).
+        Find the letter that was added to string t which was formed by randomly shuffling string s
+        and adding one more letter.
+
+        This solution uses the XOR operation:
+        1. XOR all characters in both strings
+        2. Since each character in s has a matching character in t (which XOR to 0)
+        3. The only remaining value will be the added character
+
+        Args:
+            s: The original string
+            t: The modified string with one extra character
+
+        Returns:
+            The character that was added to string t
+
+        Time Complexity: O(n) - We iterate through both strings once
+        Space Complexity: O(1) - We use only one variable regardless of input size
         """
-        out = 0
-        for c in s + t:
-            out = out ^ ord(c)
-        return chr(out)
+        # Initialize result to 0
+        result = 0
+
+        # XOR all characters from both strings
+        for char in s + t:
+            # Convert char to ASCII and XOR with result
+            result ^= ord(char)
+
+        # Convert the final result back to a character
+        return chr(result)
