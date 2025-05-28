@@ -69,6 +69,76 @@ class MinStack:
         return self.min_stack[-1]
 
 
+# Alternative space-optimized implementation
+class MinStackOptimized:
+    """
+    Space-optimized version that only stores minimum values when they change.
+
+    This approach saves space by storing tuples of (value, minimum) only when
+    a new minimum is encountered, rather than storing the minimum for every element.
+
+    Time Complexity: O(1) for all operations
+    Space Complexity: O(n) in worst case, but typically better than the basic approach
+    """
+
+    def __init__(self):
+        """
+        Initialize the optimized MinStack.
+        """
+        self.stack = []
+        self.current_min = None
+
+    def push(self, val: int) -> None:
+        """
+        Push element val onto the stack.
+
+        Args:
+            val: The integer value to push onto the stack
+        """
+        if self.current_min is None or val <= self.current_min:
+            # Store both the old minimum and the new value
+            if self.current_min is not None:
+                self.stack.append(self.current_min)
+            self.stack.append(val)
+            self.current_min = val
+        else:
+            # Just store the value
+            self.stack.append(val)
+
+    def pop(self) -> None:
+        """
+        Remove the element on the top of the stack.
+        """
+        if self.stack[-1] == self.current_min:
+            # Popping the minimum element
+            self.stack.pop()
+            if self.stack:
+                # The previous minimum is now on top
+                self.current_min = self.stack.pop()
+            else:
+                self.current_min = None
+        else:
+            self.stack.pop()
+
+    def top(self) -> int:
+        """
+        Get the top element of the stack.
+
+        Returns:
+            The top element of the stack
+        """
+        return self.stack[-1]
+
+    def getMin(self) -> int:
+        """
+        Retrieve the minimum element in the stack.
+
+        Returns:
+            The minimum element currently in the stack
+        """
+        return self.current_min
+
+
 # Usage example:
 # obj = MinStack()
 # obj.push(val)
