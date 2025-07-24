@@ -14,7 +14,7 @@ class Solution:
                 k = k - 1
 
         nums.sort()
-        if k > 0 and k % 2 != 0:
+        if k % 2 == 1:
             nums[0] = - nums[0]
 
         return sum(nums)
