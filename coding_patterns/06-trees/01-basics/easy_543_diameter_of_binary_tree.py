@@ -128,3 +128,34 @@ class Solution:
         # Start DFS and return the diameter
         diameter, _ = dfs(root)
         return diameter
+
+
+# An optimized version of the first approach
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        """
+        Find the diameter of a binary tree using recursive DFS (post-order).
+        This is a more concise version of the first solution.
+        
+        Time Complexity: O(n)
+        Space Complexity: O(h)
+        """
+        max_diameter = 0
+        
+        def height(node):
+            nonlocal max_diameter
+            
+            if not node:
+                return 0
+                
+            left_height = height(node.left)
+            right_height = height(node.right)
+            
+            # Update max diameter when we find a longer path
+            max_diameter = max(max_diameter, left_height + right_height)
+            
+            # Return height of current subtree
+            return max(left_height, right_height) + 1
+        
+        height(root)
+        return max_diameter
