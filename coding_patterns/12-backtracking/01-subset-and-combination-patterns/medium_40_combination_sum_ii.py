@@ -13,7 +13,7 @@ Key Differences from Combination Sum I:
 Key Insight: Sort first, then skip duplicates at the same recursion level
 to avoid generating duplicate combinations.
 
-Time Complexity: O(2^N) in worst case where N = len(candidates)
+Time Complexity: O(N * 2^N) in worst case where N = len(candidates)
 Space Complexity: O(N) for recursion depth + space for storing results
 """
 
