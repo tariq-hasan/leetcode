@@ -42,8 +42,8 @@ class Solution:
             memo[(stone, last_jump)] = False
             return False
         
-        # Start from stone 0 with initial jump of 1
-        return dfs(0, 1)
+        # Start from stone 0 with initial jump of 0
+        return dfs(0, 0)
 
 class SolutionDP:
     def canCross(self, stones) -> bool:
